@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <!-- Configuracion de la pagina -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA VI - Landing Page</title>
+    
+    <!-- ENLACES A HOJAS DE ESTILO Y TAILWIND -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-950 text-white font-sans antialiased selection:bg-pink-500 selection:text-white">
+
+    <!-- Boton del logo -->
+    <a href="#inicio" class="fixed top-8 left-6 md:left-12 z-50 hover:scale-110 transition-transform duration-300 group">
+        <img src="images/logo-vi.png" alt="Logo VI" class="h-10 md:h-12 drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)] group-hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.6)]">
+    </a>
+
+    <!-- PORTADA PRINCIPAL  -->
+    <main id="inicio" class="relative h-screen flex flex-col items-center justify-center overflow-hidden">
+        
+        <!-- Imagen de fondo de la portada -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/25 z-10"></div> 
+            <img src="images/fondo-gta.jpg" alt="GTA VI Key Art" class="w-full h-full object-cover object-center" />
+        </div>
+        
+        <!-- Botón central para ver el tráiler -->
+        <div class="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl">
+            <div class="flex flex-col items-center gap-3 group mt-4">
+                <a href="#trailer" class="w-20 h-20 md:w-24 md:h-24 bg-white text-gray-950 rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(0,0,0,0.3)] transition-all duration-300 transform group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white">
+                    <svg class="w-8 h-8 md:w-10 md:h-10 fill-current translate-x-1" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                </a>
+                <span class="text-xs font-black tracking-[0.3em] uppercase text-white drop-shadow-md group-hover:text-pink-400 transition-colors duration-300">
+                    Ver el Tráiler
+                </span>
+            </div>
+        </div>
+
+        <!-- Flecha animada apuntando hacia abajo -->
+        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+            <svg class="w-6 h-6 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 13l-7 7-7-7m14-6l-7 7-7-7"></path>
+            </svg>
+        </div>
+    </main>
+
+    <!--  informacion de lanzamiento -->
+    <section class="bg-[#0b0b0f] py-20 flex flex-col items-center justify-center relative border-t border-gray-900">
+        
+        <!-- Logo de Grand Theft Auto VI -->
+        <img src="images/logo-gta.png" alt="Grand Theft Auto VI Logo" class="w-48 md:w-64 mb-10 drop-shadow-[0_0_20px_rgba(255,51,133,0.2)] hover:scale-105 transition-transform duration-500">
+        
+        <!-- Fecha de lanzamiento -->
+        <h2 class="text-center font-black uppercase text-6xl md:text-[7rem] leading-[0.85] tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-[#ff4d88] via-[#ff7755] to-[#ffcc77] drop-shadow-2xl mb-12">
+            <span class="block mb-1">Disponible a partir</span>
+            <span class="block mb-1">del 19 de noviembre</span>
+            <span class="block">de 2026.</span>
+        </h2>
+
+        <!-- Plataformas disponibles (Consolas) -->
+        <div class="flex items-center justify-center w-full mt-4 mb-12">
+            <img src="images/consolas.png" alt="Disponible en PlayStation 5 y Xbox Series X|S" class="h-6 md:h-10 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300">
+        </div>
+
+        <!-- Título de la ubicación -->
+        <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#ff4d88] via-[#ff7755] to-[#ffcc77] mb-6">
+            Vice City, EE. UU.
+        </h2>
+
+        <!-- Texto de la sinopsis del juego -->
+        <div class="px-6 max-w-3xl text-center">
+            <p class="text-xs md:text-sm font-bold leading-relaxed text-transparent bg-clip-text bg-gradient-to-r from-[#ff4d88] via-[#ff7755] to-[#ffcc77]">
+                Jason y Lucia siempre han sabido que las cartas estaban en su contra, pero cuando un golpe que parecía fácil sale mal, se ven atrapados en el lado más oscuro del lugar más soleado de América, en medio de una conspiración criminal que se extiende por todo el estado de Leonida, y obligados a depender más que nunca el uno del otro si quieren salir con vida.
+            </p>
+        </div>
+        
+    </section>
+
+    <!-- SECCIÓN 3: TRÁILER OFICIAL EN VIDEO -->
+    <section id="trailer" class="py-24 bg-gray-950 relative border-t border-gray-900">
+        <div class="max-w-5xl mx-auto px-6">
+            
+            <!-- Título de la sección del tráiler -->
+            <h2 class="text-3xl md:text-5xl font-black text-center uppercase mb-12 tracking-wider">
+                Tráiler <span class="text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-orange-300">Oficial 1</span>
+            </h2>
+            
+            <!-- Contenedor del video de YouTube -->
+            <div class="relative w-full aspect-video rounded-xl overflow-hidden shadow-[0_0_40px_rgba(236,72,153,0.15)] border border-gray-800 bg-black">
+                <iframe 
+                    class="absolute top-0 left-0 w-full h-full" 
+                    src="https://www.youtube.com/embed/7ZvtE0pGk-Y?si=qL9oA-XwA2Y0t5mG&rel=0" 
+                    title="Grand Theft Auto VI Trailer" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
+            <!-- Créditos de la música -->
+            <p class="text-center text-gray-500 mt-8 text-sm tracking-wide">
+                Música: Love Is A Long Road por Tom Petty
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 4: PRESENTACIÓN DE PERSONAJES -->
+    <section id="personajes" class="py-24 bg-[#111115] relative border-t border-gray-800 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <!-- BLOQUE DE PERSONAJE: JASON DUVAL -->
+            <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+                
+                <!-- Información y descripción de Jason -->
+                <div class="w-full md:w-1/2 flex flex-col">
+                    <h3 class="text-6xl md:text-[5rem] font-black uppercase text-[#fdeca6] tracking-tighter mb-8" style="transform: scaleY(1.1); transform-origin: left;">
+                        JASON DUVAL
+                    </h3>
+                    
+                    <p class="text-3xl md:text-[2.2rem] font-bold text-[#f0a8b9] mb-8 leading-[1.1] tracking-tight">
+                        Jason quiere<br>
+                        una vida fácil,<br>
+                        pero las cosas<br>
+                        no hacen más<br>
+                        que complicarse.
+                    </p>
+                    
+                    <p class="text-white text-lg md:text-xl font-medium leading-snug max-w-[22rem]">
+                        Jason creció rodeado de<br>
+                        estafadores y delincuentes. Tras<br>
+                        un breve paso por el ejército<br>
+                        intentando dejar atrás su<br>
+                        problemática adolescencia,<br>
+                        terminó en los Cayos haciendo lo<br>
+                        que mejor sabe: trabajar para<br>
+                        traficantes de drogas locales.<br>
+                        Quizás sea hora de probar algo<br>
+                        nuevo.
+                    </p>
+                </div>
+
+                <!-- Imagen de Jason -->
+                <div class="w-full md:w-1/2">
+                    <img src="images/jason.webp" alt="Jason Duval" class="w-full h-auto object-cover border border-gray-800 shadow-[0_0_40px_rgba(0,0,0,0.5)]">
+                </div>
+            </div>
+
+            <!-- BLOQUE DE PERSONAJE: LUCÍA -->
+            <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16 mt-24">
+                
+                <!-- Imagen de Lucía -->
+                <div class="w-full md:w-1/2">
+                    <img src="images/lucia.webp" alt="Lucía Caminos" class="w-full h-auto object-cover border border-gray-800 shadow-[0_0_40px_rgba(0,0,0,0.5)]">
+                </div>
+
+                <!-- Información y descripción de Lucía -->
+                <div class="w-full md:w-1/2 flex flex-col">
+                    <h3 class="text-6xl md:text-[5rem] font-black uppercase text-[#fdeca6] tracking-tighter mb-8" style="transform: scaleY(1.1); transform-origin: left;">
+                        LUCÍA CAMINOS
+                    </h3>
+                    
+                    <p class="text-3xl md:text-[2.2rem] font-bold text-[#f0a8b9] mb-8 leading-[1.1] tracking-tight">
+                        El padre de Lucía<br>
+                        le enseñó a<br>
+                        luchar desde que<br>
+                        pudo caminar.
+                    </p>
+                    
+                    <p class="text-white text-lg md:text-xl font-medium leading-snug max-w-[22rem]">
+                        Desde entonces, la vida no ha<br>
+                        hecho más que golpearla. Luchar<br>
+                        por su familia la llevó a la<br>
+                        Penitenciaría de Leonida. La pura<br>
+                        suerte la salvó. Lucía aprendió la<br>
+                        lección: de ahora en adelante,<br>
+                        solo tomará decisiones<br>
+                        inteligentes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARCHIVOS JAVASCRIPT -->
+    <script src="assets/javascript/main.js"></script>
+</body>
+</html>

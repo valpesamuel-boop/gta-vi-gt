@@ -1,0 +1,17 @@
+/* assets/css/style.css */
+
+/* Personalización de la barra de desplazamiento (Scrollbar) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Fondo de la barra */
+::-webkit-scrollbar-track {
+    background: #310132; /* Gris súper oscuro, como el fondo de la página */
+}
+
+/*La barra de navegacion */
+::-webkit-scrollbar-thumb {
+    background: #ec4899; 
+    border-radius: 5px;
+}
